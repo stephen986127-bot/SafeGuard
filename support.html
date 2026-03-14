@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SafeGuard - Help & Support</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; background: #fafafa; line-height: 1.7; }
+.header { background: linear-gradient(135deg, #00897B, #004D40); padding: 48px 24px; text-align: center; }
+.header h1 { color: white; font-size: 28px; font-weight: 700; }
+.header p { color: rgba(255,255,255,0.8); font-size: 14px; margin-top: 8px; }
+.container { max-width: 720px; margin: 0 auto; padding: 32px 24px 64px; }
+h2 { font-size: 20px; color: #004D40; margin: 32px 0 12px; }
+h3 { font-size: 16px; color: #1a1a1a; margin: 20px 0 8px; font-weight: 600; }
+p, li { font-size: 15px; color: #333; margin-bottom: 12px; }
+ul { padding-left: 24px; }
+.card { background: white; border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.contact-box { background: #E8F5E9; border-radius: 12px; padding: 24px; text-align: center; margin-top: 40px; }
+.contact-box a { color: #00897B; font-weight: 600; font-size: 16px; }
+.updated { text-align: center; color: #888; font-size: 13px; margin-top: 48px; padding-top: 24px; border-top: 1px solid #e0e0e0; }
+a { color: #00897B; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Help &amp; Support</h1>
+  <p>SafeGuard — Personal Safety App</p>
+</div>
+<div class="container">
+
+<h2>Getting Started</h2>
+
+<div class="card">
+<h3>How does SafeGuard work?</h3>
+<p>SafeGuard monitors your activity using step count, location movement, and phone usage. If no activity is detected for your configured threshold period (default: 8 hours), the app first asks you to confirm you're safe. If you don't respond within the confirmation window, your guardians receive a push notification to check on you.</p>
+</div>
+
+<div class="card">
+<h3>How do I add a guardian?</h3>
+<p>Go to the Guardians tab and tap the + button. You can add a guardian by:</p>
+<ul>
+  <li>Showing them your QR code to scan</li>
+  <li>Scanning their QR code (you become their guardian)</li>
+  <li>Searching by name</li>
+</ul>
+<p>The other person must accept the request before the guardian relationship is active.</p>
+</div>
+
+<div class="card">
+<h3>Can two people guard each other?</h3>
+<p>Yes. A and B can each add the other as a guardian. The two directions are independent — each person receives alerts for the other.</p>
+</div>
+
+<div class="card">
+<h3>What is the guarding schedule?</h3>
+<p>The guarding schedule defines the hours during which SafeGuard actively monitors your activity. Outside these hours (e.g., when you're sleeping), monitoring is paused and no alerts are triggered. You can configure this in Settings.</p>
+</div>
+
+<h2>Alerts & Notifications</h2>
+
+<div class="card">
+<h3>I received a "Are you okay?" notification. What should I do?</h3>
+<p>Open the app and tap "I'm Safe" to confirm you're okay. Your guardians will not be notified. If you need help, tap "I Need Help" — your guardians will be alerted immediately.</p>
+</div>
+
+<div class="card">
+<h3>Why did my guardian receive a false alert?</h3>
+<p>This can happen if your phone was off, had no internet connection, or was left stationary for an extended period. Make sure your guarding schedule is configured to match your active hours to reduce false alerts.</p>
+</div>
+
+<div class="card">
+<h3>Why am I not receiving notifications?</h3>
+<p>Please check:</p>
+<ul>
+  <li>Notifications are enabled for SafeGuard in iOS Settings → Notifications</li>
+  <li>Focus / Do Not Disturb mode is not blocking notifications</li>
+  <li>You have an active internet connection</li>
+  <li>The app has not been force-quit — SafeGuard needs to run in the background</li>
+</ul>
+</div>
+
+<h2>Activity Detection</h2>
+
+<div class="card">
+<h3>Why does SafeGuard say I'm inactive when I'm moving?</h3>
+<p>SafeGuard checks for activity every 30 minutes (configurable). Make sure:</p>
+<ul>
+  <li>Health permissions are granted: iOS Settings → Privacy → Health → SafeGuard → Steps (ON)</li>
+  <li>Location permissions are set to "Always" or "While Using": iOS Settings → Privacy → Location → SafeGuard</li>
+  <li>The app is not being restricted by iOS Low Power Mode</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>What counts as activity?</h3>
+<p>Any of the following resets the inactivity timer:</p>
+<ul>
+  <li>Any step count detected via HealthKit during the sampling window</li>
+  <li>Location movement of 10 meters or more</li>
+  <li>Unlocking your phone</li>
+  <li>Opening the SafeGuard app</li>
+</ul>
+</div>
+
+<h2>Subscription</h2>
+
+<div class="card">
+<h3>What's included in the free version?</h3>
+<p>The free version includes core safety monitoring with one guardian. Premium features such as multiple guardians and notification history are available with a subscription.</p>
+</div>
+
+<div class="card">
+<h3>How do I cancel my subscription?</h3>
+<p>Go to iOS Settings → Your Name → Subscriptions → SafeGuard, then tap Cancel Subscription. You can also manage subscriptions directly from the App Store.</p>
+</div>
+
+<div class="card">
+<h3>How do I restore my purchases?</h3>
+<p>Go to SafeGuard Settings → Subscription, and tap "Restore Purchases". Make sure you are signed in with the same Apple ID used for the original purchase.</p>
+</div>
+
+<h2>Privacy & Data</h2>
+
+<div class="card">
+<h3>Does SafeGuard upload my location to the server?</h3>
+<p>No. Your precise location is never uploaded to our servers. Only a movement score (whether you moved, not where) is used locally to assess activity.</p>
+</div>
+
+<div class="card">
+<h3>How do I delete my account?</h3>
+<p>Go to Settings → Profile → Delete Account. This will permanently remove your account and all associated data from our servers.</p>
+</div>
+
+<div class="contact-box">
+  <p style="margin-bottom: 8px; font-weight: 600;">Still need help?</p>
+  <p style="margin-bottom: 16px; color: #555;">Contact us and we'll get back to you as soon as possible.</p>
+  <a href="mailto:stephen20150302@gmail.com">stephen20150302@gmail.com</a>
+</div>
+
+<p class="updated">Last updated: March 2026</p>
+</div>
+</body>
+</html>

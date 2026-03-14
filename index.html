@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SafeGuard — Personal Safety App</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; background: #fafafa; }
+
+/* Header */
+.hero { background: linear-gradient(135deg, #00897B, #004D40); padding: 80px 24px 64px; text-align: center; }
+.hero-icon { width: 96px; height: 96px; background: rgba(255,255,255,0.15); border-radius: 22px; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; }
+.hero-icon svg { width: 52px; height: 52px; fill: white; }
+.hero h1 { color: white; font-size: 36px; font-weight: 700; margin-bottom: 12px; }
+.hero p { color: rgba(255,255,255,0.85); font-size: 18px; max-width: 480px; margin: 0 auto 32px; line-height: 1.6; }
+.app-store-btn { display: inline-block; background: white; color: #004D40; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 50px; text-decoration: none; transition: opacity 0.2s; }
+.app-store-btn:hover { opacity: 0.9; }
+
+/* Features */
+.features { max-width: 760px; margin: 0 auto; padding: 64px 24px; }
+.features h2 { font-size: 26px; font-weight: 700; text-align: center; margin-bottom: 40px; color: #1a1a1a; }
+.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+.feature-card { background: white; border-radius: 16px; padding: 28px 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+.feature-icon { width: 48px; height: 48px; border-radius: 12px; background: #E8F5E9; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 24px; }
+.feature-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: #1a1a1a; }
+.feature-card p { font-size: 14px; color: #666; line-height: 1.6; }
+
+/* How it works */
+.how { background: #F1F8F6; padding: 64px 24px; }
+.how-inner { max-width: 760px; margin: 0 auto; }
+.how h2 { font-size: 26px; font-weight: 700; text-align: center; margin-bottom: 40px; }
+.steps { display: flex; flex-direction: column; gap: 20px; }
+.step { display: flex; align-items: flex-start; gap: 20px; background: white; border-radius: 14px; padding: 24px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+.step-num { width: 36px; height: 36px; border-radius: 50%; background: #00897B; color: white; font-weight: 700; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.step-text h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+.step-text p { font-size: 14px; color: #666; line-height: 1.5; }
+
+/* Links */
+.links { max-width: 760px; margin: 0 auto; padding: 64px 24px; }
+.links h2 { font-size: 26px; font-weight: 700; text-align: center; margin-bottom: 32px; }
+.link-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.link-card { background: white; border-radius: 14px; padding: 24px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); text-decoration: none; color: #1a1a1a; display: block; transition: transform 0.2s, box-shadow 0.2s; }
+.link-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+.link-card .icon { font-size: 28px; margin-bottom: 12px; }
+.link-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+.link-card p { font-size: 13px; color: #888; }
+
+/* Footer */
+footer { background: #004D40; color: rgba(255,255,255,0.7); text-align: center; padding: 32px 24px; font-size: 13px; }
+footer a { color: rgba(255,255,255,0.85); text-decoration: none; margin: 0 8px; }
+footer a:hover { color: white; }
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-icon">
+    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+  </div>
+  <h1>SafeGuard</h1>
+  <p>A personal safety app that watches over you and alerts your loved ones when you need them most.</p>
+  <a href="https://apps.apple.com" class="app-store-btn">Download on the App Store</a>
+</div>
+
+<!-- Features -->
+<div class="features">
+  <h2>Why SafeGuard?</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <div class="feature-icon">🛡️</div>
+      <h3>Always Watching</h3>
+      <p>Monitors your activity in the background. If you go silent, SafeGuard speaks up for you.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">👥</div>
+      <h3>Guardian Network</h3>
+      <p>Add family or friends as guardians. They get notified if you don't respond — and you can guard them too.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔕</div>
+      <h3>No False Alarms</h3>
+      <p>Configurable guarding hours and smart activity detection keep false alerts to a minimum.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <h3>Privacy First</h3>
+      <p>Your location is never uploaded. Activity detection runs locally on your device.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🆘</div>
+      <h3>One-Tap SOS</h3>
+      <p>Press the SOS button anytime to instantly alert all your guardians.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⚙️</div>
+      <h3>Fully Configurable</h3>
+      <p>Set your own schedule, inactivity threshold, and confirmation window to match your lifestyle.</p>
+    </div>
+  </div>
+</div>
+
+<!-- How it works -->
+<div class="how">
+  <div class="how-inner">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">
+          <h3>Set up your profile and add guardians</h3>
+          <p>Sign in, configure your guarding hours and inactivity threshold, then invite your family or friends as guardians via QR code or search.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">
+          <h3>SafeGuard monitors your activity</h3>
+          <p>The app checks for step count and phone usage every 30 minutes during your active hours. Normal activity resets the timer automatically.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">
+          <h3>You receive a check-in notification</h3>
+          <p>If no activity is detected for your threshold period, SafeGuard asks "Are you okay?" — tap "I'm Safe" to confirm, or "I Need Help" for an emergency.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-text">
+          <h3>Guardians are notified if you don't respond</h3>
+          <p>If you don't respond within the confirmation window, all your guardians receive a push notification to check on you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Links -->
+<div class="links">
+  <h2>Support & Legal</h2>
+  <div class="link-grid">
+    <a href="support.html" class="link-card">
+      <div class="icon">💬</div>
+      <h3>Help & Support</h3>
+      <p>FAQs and troubleshooting</p>
+    </a>
+    <a href="privacy.html" class="link-card">
+      <div class="icon">🔒</div>
+      <h3>Privacy Policy</h3>
+      <p>How we handle your data</p>
+    </a>
+    <a href="terms.html" class="link-card">
+      <div class="icon">📄</div>
+      <h3>Terms of Use</h3>
+      <p>Terms and conditions</p>
+    </a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+    <a href="support.html">Support</a>
+    <a href="mailto:stephen20150302@gmail.com">Contact</a>
+  </p>
+  <p style="margin-top: 12px;">© 2026 SafeGuard. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

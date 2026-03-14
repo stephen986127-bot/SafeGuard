@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SafeGuard - Privacy Policy</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; background: #fafafa; line-height: 1.7; }
+.header { background: linear-gradient(135deg, #00897B, #004D40); padding: 48px 24px; text-align: center; }
+.header h1 { color: white; font-size: 28px; font-weight: 700; }
+.header p { color: rgba(255,255,255,0.8); font-size: 14px; margin-top: 8px; }
+.container { max-width: 720px; margin: 0 auto; padding: 32px 24px 64px; }
+h2 { font-size: 20px; color: #004D40; margin: 32px 0 12px; }
+p, li { font-size: 15px; color: #333; margin-bottom: 12px; }
+ul { padding-left: 24px; }
+.updated { text-align: center; color: #888; font-size: 13px; margin-top: 48px; padding-top: 24px; border-top: 1px solid #e0e0e0; }
+a { color: #00897B; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Privacy Policy</h1>
+  <p>SafeGuard — Personal Safety App</p>
+</div>
+<div class="container">
+
+<h2>Overview</h2>
+<p>SafeGuard ("we", "our", or "the app") is committed to protecting your privacy. SafeGuard is a personal safety app that monitors user activity and notifies designated guardians when prolonged inactivity is detected. This policy explains what data we collect, why we collect it, where it is stored, and how we protect it.</p>
+<p>We follow a minimal data principle: we only collect data that is strictly necessary to operate the SafeGuard service. We do not collect behavioral analytics, do not sell your data, and do not use your data for advertising.</p>
+
+<h2>How SafeGuard Works</h2>
+<p>SafeGuard monitors your activity using step count (via Apple HealthKit), location movement, and phone usage signals. If no activity is detected for your configured threshold period, the app sends you a confirmation notification. If you do not respond within the confirmation window, your designated guardians receive a push notification to check on you. All activity detection is processed locally on your device — only the minimum necessary data is sent to our servers.</p>
+
+<h2>Data We Collect</h2>
+<p>The following data is collected and stored on our servers to operate the service:</p>
+<ul>
+  <li><strong>Account information:</strong> Your display name and email address, used to identify your account and enable guardian relationships.</li>
+  <li><strong>Device token (FCM Token):</strong> Your Firebase Cloud Messaging token, used exclusively to deliver push notifications to you and your guardians.</li>
+  <li><strong>Heartbeat timestamps:</strong> Periodic timestamps indicating your app was recently active. Used to detect inactivity. No sensor data is included.</li>
+  <li><strong>Guardian relationships:</strong> The user IDs and display names of users you have added as guardians or are guarding.</li>
+  <li><strong>Alert records:</strong> Records of safety alerts triggered, retained for up to 90 days to coordinate notifications between users.</li>
+  <li><strong>Guarding schedule settings:</strong> Your configured active hours and inactivity threshold, stored to enable server-side timeout detection.</li>
+</ul>
+
+<h2>Data Processed Locally Only (Never Uploaded)</h2>
+<ul>
+  <li><strong>Step count data:</strong> Accessed via Apple HealthKit. Read locally on your device only, never sent to our servers.</li>
+  <li><strong>Location data:</strong> Used to detect movement as an activity signal. Only a movement indicator (moved / not moved) is used — your actual GPS coordinates are never uploaded or stored.</li>
+  <li><strong>Motion and accelerometer data:</strong> Used to detect device pick-up, processed entirely on-device.</li>
+</ul>
+
+<h2>Where Your Data Is Stored</h2>
+<p>All server-side data is stored on <strong>Google Firebase</strong> infrastructure, with primary data centers located in the <strong>United States</strong>. This means your data may be transferred to and processed in the United States, regardless of your country of residence.</p>
+<p>Google Firebase is compliant with major international data protection standards. For more information, see <a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase Privacy and Security</a>.</p>
+<p>Specifically, your data is stored in the following Firebase services:</p>
+<ul>
+  <li><strong>Firebase Authentication</strong> — login credentials (Apple ID / Google Account)</li>
+  <li><strong>Cloud Firestore</strong> — account info, heartbeat data, guardian relationships, alert records</li>
+  <li><strong>Firebase Cloud Messaging (FCM)</strong> — device tokens for push notification delivery</li>
+</ul>
+
+<h2>How We Use Your Data</h2>
+<ul>
+  <li>To detect inactivity and trigger safety alerts to your guardians when appropriate</li>
+  <li>To deliver push notifications to you and your designated guardians</li>
+  <li>To maintain guardian relationships and alert history</li>
+  <li>To authenticate your account securely via Firebase Authentication</li>
+</ul>
+<p>We do not use your data for advertising, behavioral analytics, or any purpose beyond operating the SafeGuard service.</p>
+
+<h2>Data Sharing</h2>
+<p>We do not sell, rent, or share your personal data with third parties, except:</p>
+<ul>
+  <li><strong>Your guardians:</strong> Your display name is visible to users you have an active guardian relationship with.</li>
+  <li><strong>Google Firebase:</strong> As our infrastructure provider, Google processes data on our behalf under a data processing agreement.</li>
+  <li><strong>Legal requirements:</strong> We may disclose data if required by law or to protect the safety of our users.</li>
+</ul>
+
+<h2>Data Retention</h2>
+<ul>
+  <li>Account data is retained until you delete your account</li>
+  <li>Alert records are retained for up to 90 days</li>
+  <li>Heartbeat data is overwritten on each update and not archived</li>
+  <li>Guardian relationship data is deleted when either party removes the relationship</li>
+  <li>Device tokens are updated automatically and old tokens are removed periodically</li>
+</ul>
+
+<h2>Your Rights (GDPR & International)</h2>
+<p>Depending on your country of residence, you may have the following rights regarding your personal data:</p>
+<ul>
+  <li><strong>Right of access:</strong> Request a copy of the personal data we hold about you</li>
+  <li><strong>Right to rectification:</strong> Request correction of inaccurate data</li>
+  <li><strong>Right to erasure:</strong> Request deletion of your account and all associated data</li>
+  <li><strong>Right to data portability:</strong> Request your data in a portable format</li>
+  <li><strong>Right to object:</strong> Object to processing of your data in certain circumstances</li>
+  <li><strong>Right to withdraw consent:</strong> Withdraw consent for location or health data access at any time via iOS Settings → Privacy</li>
+</ul>
+<p>To exercise any of these rights, please contact us at <a href="mailto:stephen20150302@gmail.com">stephen20150302@gmail.com</a>. We will respond within 30 days.</p>
+
+<h2>Children's Privacy</h2>
+<p>SafeGuard is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+
+<h2>Security</h2>
+<p>We implement industry-standard security measures including encrypted data transmission (HTTPS/TLS), Firebase Security Rules to restrict data access, and authentication-based access controls. However, no method of transmission or storage is 100% secure.</p>
+
+<h2>Changes to This Policy</h2>
+<p>We may update this privacy policy from time to time. We will notify you of significant changes via the app. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+<h2>Contact Us</h2>
+<p>For privacy-related questions, data requests, or to delete your account, please contact us at:<br>
+<a href="mailto:stephen20150302@gmail.com">stephen20150302@gmail.com</a></p>
+
+<p class="updated">Last updated: March 2026</p>
+</div>
+</body>
+</html>
