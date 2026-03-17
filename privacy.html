@@ -41,12 +41,13 @@ a { color: #00897B; }
   <li><strong>Guardian relationships:</strong> The user IDs and display names of users you have added as guardians or are guarding.</li>
   <li><strong>Alert records:</strong> Records of safety alerts triggered, retained for up to 90 days to coordinate notifications between users.</li>
   <li><strong>Guarding schedule settings:</strong> Your configured active hours and inactivity threshold, stored to enable server-side timeout detection.</li>
+  <li><strong>Last known location (optional):</strong> If you enable the "Share last known location" option in Settings, your device's last known GPS coordinates may be included in alert notifications sent to your guardians. This data is transmitted only at the time of an alert and is not continuously stored on our servers.</li>
 </ul>
 
 <h2>Data Processed Locally Only (Never Uploaded)</h2>
 <ul>
   <li><strong>Step count data:</strong> Accessed via Apple HealthKit. Read locally on your device only, never sent to our servers.</li>
-  <li><strong>Location data:</strong> Used to detect movement as an activity signal. Only a movement indicator (moved / not moved) is used — your actual GPS coordinates are never uploaded or stored.</li>
+  <li><strong>Location movement signal:</strong> Used to detect movement as an activity signal. The movement indicator (moved / not moved) is processed on-device. GPS coordinates are only uploaded if you explicitly enable the "Share last known location" feature.</li>
   <li><strong>Motion and accelerometer data:</strong> Used to detect device pick-up, processed entirely on-device.</li>
 </ul>
 
@@ -72,7 +73,7 @@ a { color: #00897B; }
 <h2>Data Sharing</h2>
 <p>We do not sell, rent, or share your personal data with third parties, except:</p>
 <ul>
-  <li><strong>Your guardians:</strong> Your display name is visible to users you have an active guardian relationship with.</li>
+  <li><strong>Your guardians:</strong> Your display name is visible to users you have an active guardian relationship with. If location sharing is enabled, your last known location may be included in alert notifications sent to your guardians.</li>
   <li><strong>Google Firebase:</strong> As our infrastructure provider, Google processes data on our behalf under a data processing agreement.</li>
   <li><strong>Legal requirements:</strong> We may disclose data if required by law or to protect the safety of our users.</li>
 </ul>
