@@ -8,7 +8,6 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; background: #fafafa; }
 
-/* Header */
 .hero { background: linear-gradient(135deg, #00897B, #004D40); padding: 80px 24px 64px; text-align: center; }
 .hero-icon { width: 96px; height: 96px; background: rgba(255,255,255,0.15); border-radius: 22px; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; }
 .hero-icon svg { width: 52px; height: 52px; fill: white; }
@@ -17,7 +16,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .app-store-btn { display: inline-block; background: white; color: #004D40; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 50px; text-decoration: none; transition: opacity 0.2s; }
 .app-store-btn:hover { opacity: 0.9; }
 
-/* Features */
 .features { max-width: 760px; margin: 0 auto; padding: 64px 24px; }
 .features h2 { font-size: 26px; font-weight: 700; text-align: center; margin-bottom: 40px; color: #1a1a1a; }
 .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
@@ -26,7 +24,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .feature-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: #1a1a1a; }
 .feature-card p { font-size: 14px; color: #666; line-height: 1.6; }
 
-/* How it works */
 .how { background: #F1F8F6; padding: 64px 24px; }
 .how-inner { max-width: 760px; margin: 0 auto; }
 .how h2 { font-size: 26px; font-weight: 700; text-align: center; margin-bottom: 40px; }
@@ -36,7 +33,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .step-text h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
 .step-text p { font-size: 14px; color: #666; line-height: 1.5; }
 
-/* Links */
+.trial-banner { background: #004D40; padding: 48px 24px; text-align: center; }
+.trial-banner h2 { color: white; font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+.trial-banner p { color: rgba(255,255,255,0.8); font-size: 16px; margin-bottom: 28px; }
+.trial-banner .app-store-btn { background: white; color: #004D40; }
+
 .links { max-width: 760px; margin: 0 auto; padding: 64px 24px; }
 .links h2 { font-size: 26px; font-weight: 700; text-align: center; margin-bottom: 32px; }
 .link-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
@@ -46,25 +47,23 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .link-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
 .link-card p { font-size: 13px; color: #888; }
 
-/* Footer */
 footer { background: #004D40; color: rgba(255,255,255,0.7); text-align: center; padding: 32px 24px; font-size: 13px; }
 footer a { color: rgba(255,255,255,0.85); text-decoration: none; margin: 0 8px; }
 footer a:hover { color: white; }
+footer p + p { margin-top: 8px; }
 </style>
 </head>
 <body>
 
-<!-- Hero -->
 <div class="hero">
   <div class="hero-icon">
     <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
   </div>
   <h1>SafeGuard</h1>
   <p>A personal safety app that watches over you and alerts your loved ones when you need them most.</p>
-  <a href="https://apps.apple.com" class="app-store-btn">Download on the App Store</a>
+  <a href="https://apps.apple.com/app/id6744538614" class="app-store-btn">Download on the App Store</a>
 </div>
 
-<!-- Features -->
 <div class="features">
   <h2>Why SafeGuard?</h2>
   <div class="feature-grid">
@@ -86,7 +85,7 @@ footer a:hover { color: white; }
     <div class="feature-card">
       <div class="feature-icon">🔒</div>
       <h3>Privacy First</h3>
-      <p>Your location is never uploaded. Activity detection runs locally on your device.</p>
+      <p>Activity detection runs locally on your device. Your location is only shared with guardians when you choose.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">🆘</div>
@@ -98,10 +97,24 @@ footer a:hover { color: white; }
       <h3>Fully Configurable</h3>
       <p>Set your own schedule, inactivity threshold, and confirmation window to match your lifestyle.</p>
     </div>
+    <div class="feature-card">
+      <div class="feature-icon">📍</div>
+      <h3>Location Sharing</h3>
+      <p>Optionally share your last known location with guardians when an alert is triggered (not real-time tracking) — so they know where to find you.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔔</div>
+      <h3>Notification History</h3>
+      <p>Full history of all alerts sent and received, so you always know what happened and when.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">☁️</div>
+      <h3>iCloud Sync</h3>
+      <p>Your settings sync automatically across all your devices via iCloud — switch phones with zero hassle.</p>
+    </div>
   </div>
 </div>
 
-<!-- How it works -->
 <div class="how">
   <div class="how-inner">
     <h2>How It Works</h2>
@@ -138,7 +151,12 @@ footer a:hover { color: white; }
   </div>
 </div>
 
-<!-- Links -->
+<div class="trial-banner">
+  <h2>Try SafeGuard Free for 14 Days</h2>
+  <p>Full access to all features. No charge until your trial ends. Cancel anytime.</p>
+  <a href="https://apps.apple.com/app/id6744538614" class="app-store-btn">Download on the App Store</a>
+</div>
+
 <div class="links">
   <h2>Support & Legal</h2>
   <div class="link-grid">
@@ -160,12 +178,15 @@ footer a:hover { color: white; }
   </div>
 </div>
 
-<!-- Footer -->
 <footer>
   <p>
     <a href="privacy.html">Privacy Policy</a>
     <a href="terms.html">Terms of Use</a>
     <a href="support.html">Support</a>
-    <a href="/cdn-cgi/l/email-protection#d9aaadbca9b1bcb7ebe9e8ece9eae9eb99beb4b8b0b5f7bab6b4">Contact</a>
+    <a href="mailto:stephen20150302@gmail.com">Contact</a>
   </p>
-  <p s
+  <p style="margin-top: 8px;">© 2026 SafeGuard. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
