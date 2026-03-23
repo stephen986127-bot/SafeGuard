@@ -44,6 +44,15 @@ a { color: #00897B; }
   <li><strong>Last known location (optional):</strong> If you enable the "Share last known location" option in Settings, your device's last known GPS coordinates may be included in alert notifications sent to your guardians. This data is transmitted only at the time of an alert and is not continuously stored on our servers.</li>
 </ul>
 
+<h2>Background Location Usage</h2>
+<p>SafeGuard requests the "Always Allow" location permission to enable continuous background activity detection. This is a core feature of the app and works as follows:</p>
+<ul>
+  <li><strong>Purpose:</strong> When your device moves more than 10 meters, iOS wakes SafeGuard briefly to record an activity signal. This allows the app to accurately detect whether you are active without requiring you to open the app.</li>
+  <li><strong>What is recorded:</strong> Only whether movement occurred (yes/no). Precise GPS coordinates are not continuously stored on our servers.</li>
+  <li><strong>What is NOT done:</strong> We do not track your route, log your location history, or share your location with anyone except when you explicitly enable "Share last known location" during a safety alert.</li>
+  <li><strong>How to control it:</strong> You can change location permissions at any time in iOS Settings → Privacy & Security → Location Services → SafeGuard. If you select "While Using" instead of "Always", background activity detection will be limited and may result in false alerts.</li>
+</ul>
+
 <h2>Data Processed Locally Only (Never Uploaded)</h2>
 <ul>
   <li><strong>Step count data:</strong> Accessed via Apple HealthKit. Read locally on your device only, never sent to our servers.</li>
